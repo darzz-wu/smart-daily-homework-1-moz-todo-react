@@ -87,6 +87,8 @@ const headingText = `${taskList.length} ${tasksNoun} remaining`;
 const listHeadingRef = useRef(null);
 const prevTaskLength = usePrevious(tasks.length);
 useEffect(() => {
+  // 如果刪除成功現在的長度會比之前的長度少 1
+  // 在父層用此方式判斷以避免 function 上下傳遞
   if (tasks.length - prevTaskLength === -1) {
     listHeadingRef.current.focus();
   }
