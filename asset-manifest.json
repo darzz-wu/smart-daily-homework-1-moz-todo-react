@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/smart-daily-homework-1-moz-todo-react/static/css/main.8d9e4bf9.css",
+    "main.css": "/smart-daily-homework-1-moz-todo-react/static/css/main.8c4bec7e.css",
     "main.js": "/smart-daily-homework-1-moz-todo-react/static/js/main.b3e80dfc.js",
     "static/js/787.df7176c1.chunk.js": "/smart-daily-homework-1-moz-todo-react/static/js/787.df7176c1.chunk.js",
     "index.html": "/smart-daily-homework-1-moz-todo-react/index.html",
-    "main.8d9e4bf9.css.map": "/smart-daily-homework-1-moz-todo-react/static/css/main.8d9e4bf9.css.map",
+    "main.8c4bec7e.css.map": "/smart-daily-homework-1-moz-todo-react/static/css/main.8c4bec7e.css.map",
     "main.b3e80dfc.js.map": "/smart-daily-homework-1-moz-todo-react/static/js/main.b3e80dfc.js.map",
     "787.df7176c1.chunk.js.map": "/smart-daily-homework-1-moz-todo-react/static/js/787.df7176c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d9e4bf9.css",
+    "static/css/main.8c4bec7e.css",
     "static/js/main.b3e80dfc.js"
   ]
 }
