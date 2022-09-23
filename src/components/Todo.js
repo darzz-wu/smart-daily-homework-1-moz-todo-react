@@ -13,7 +13,7 @@ function usePrevious(value) {
 
 export default function Todo(props) {
   const [isEditing, setEditing] = useState(false);
-  const [newName, setNewName] = useState('');
+  const [newName, setNewName] = useState(props.name);
   // 使用 ref 讓渲染過後實為不同的 DOM 仍能藉由虛擬 DOM 對應出直觀中應為相同的 DOM
   const editFieldRef = useRef(null);
   const editButtonRef = useRef(null);
@@ -28,7 +28,7 @@ console.log('wasEditing',wasEditing)
     e.preventDefault();
     if(newName.trim() === '') return;
     props.editTask(props.id, newName);
-    setNewName("");
+    // setNewName("");
     setEditing(false);
   }
   
@@ -42,7 +42,9 @@ console.log('wasEditing',wasEditing)
           id={props.id}
           className="todo-text"
           type="text"
-          value={newName || props.name}
+          // 這裡會造成預設值刪不掉
+          // value={newName || props.name}
+          value={newName}
           onChange={handleChange}
           ref={editFieldRef}
         />
